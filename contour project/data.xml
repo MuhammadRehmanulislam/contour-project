@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Automation>
+	<Executlion>
+		<Login>
+			<url>https://www.mariab.pk/</url>
+			
+			<username>rehmanmani247@gmail.com</username>
+			<password>Rehman1122@</password>
+		</Login>
+	</Executlion>
+</Automation>

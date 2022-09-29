@@ -20,13 +20,13 @@ namespace contour_project
         By signin = By.Id("send2");
 
 
-        public void login1(string email, string pass, string capt)
+        public void login1(string email, string pass)
         {
             Click(account);
             Click(login);
             Write(emailid, email);
             Write(password, pass);
-            Write(captcha, capt);
+           // Write(captcha, capt);
             Thread.Sleep(15000);
             Click(signin);
         }

@@ -43,7 +43,22 @@ namespace contour_project
             driver.FindElement(by).Click();
 
         }
+        ///
+        public static void max()
 
+        {
+
+            driver.Manage().Window.Maximize();
+
+        }
+        public static void wait()
+
+        {
+
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+
+        }
+        ///
         //public void Clear(By by)
 
         //{

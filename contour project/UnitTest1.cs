@@ -11,10 +11,17 @@ namespace contour_project
         public void TestMethod1()
         {
             baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            wait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
+
             SignUp sign = new SignUp();
-            sign.login("rehman", "usmanamjad1020@gmail.com", "usmna");
+            LogIn log = new LogIn();
+
+            log.login1("rehmanmani247@gmail.com", "Rehman1122@", "");
+
+          //  sign.signup1("Rehman", "rehmanmani247@gmail.com", "Rehman1122@", "Rehman1122@", "");
 
         }
     }

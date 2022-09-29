@@ -17,11 +17,16 @@ namespace contour_project
 
 
             SignUp sign = new SignUp();
+            //  sign.signup1("Rehman", "rehmanmani247@gmail.com", "Rehman1122@", "Rehman1122@", "");
+
             LogIn log = new LogIn();
+            //   log.login1("rehmanmani247@gmail.com", "Rehman1122@", "");
 
-            log.login1("rehmanmani247@gmail.com", "Rehman1122@", "");
+            Search srch = new Search();
+            srch.searchh("winter");
 
-          //  sign.signup1("Rehman", "rehmanmani247@gmail.com", "Rehman1122@", "Rehman1122@", "");
+
+
 
         }
     }

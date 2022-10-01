@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="addtocart.cs" />
     <Compile Include="baseclass.cs" />
+    <Compile Include="checkout.cs" />
     <Compile Include="filter.cs" />
     <Compile Include="invalidLogin.cs" />
     <Compile Include="invalidSignup.cs" />

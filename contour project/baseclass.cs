@@ -74,9 +74,14 @@ namespace contour_project
 
         }
 
+
+
         //public static void hover()
         //{
-            
+        //      Action a = new Action(driver);
+        //     a.MoveToElement(driver.FindElement(By.XPath("(//span[text()='Ready To Wear'])[1]"))).Build().Perform();
+        //     driver.FindElement(By.Id("Casuals")).Click();
+
 
 
         //}

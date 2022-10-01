@@ -1,7 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Interactions;
 using System;
+using System.Threading;
 
 namespace contour_project
 {
@@ -41,7 +43,7 @@ namespace contour_project
             //sign.invalidSignup1("Rehman", "rehmanmani247gmail.com", "Rehman1122", "Rehman1122@", "");
 
 
-            //   log.login1("rehmanmani247@gmail.com", "Rehman1122@", "");
+            //log.login1("rehmanmani247@gmail.com", "Rehman1122@", "");
 
             //invalidLogin invlogin = new invalidLogin();
             //invlogin.invalidlogin1("rehmanmani247@gmail.com", "Rehman1122", "");
@@ -52,17 +54,34 @@ namespace contour_project
             //searchOnly srch = new searchOnly();
             //srch.searchonly1("winter");
 
+            //checkout chk = new checkout();
+            //chk.checkout1("rehmanmani247@gmail.com", "Rehman1122@", "winter");
+
+            // IWebDriver driver;
 
             IWebDriver driver = new ChromeDriver();
-           // driver.Url = "https://www.mariab.pk/";
-            addtocart cart = new addtocart();
-            Action a = new Action(driver);
-            a.MoveToElement(driver.FindElement(By.XPath("(//span[text()='Ready To Wear'])[1]"))).Build().Perform();
-            driver.FindElement(By.Id("Casuals")).Click();
-            cart.addtoCart();
+            driver.Url = "https://www.mariab.pk/";
+            //addtocart cart = new addtocart();
+            //Action a = new Action(driver);
+            //a.MoveToElement(driver.FindElement(By.XPath("(//span[text()='Ready To Wear'])[1]"))).Build().Perform();
+            //driver.FindElement(By.Id("Casuals")).Click();
+            //cart.addtoCart();
+
+            Thread.Sleep(10000);
+            IWebElement mainMenu = driver.FindElement(By.XPath("(//span[text()='Ready To Wear'])[1]"));
+            Thread.Sleep(10000);
+
+            Actions actions = new Actions(driver);
+
+            actions.MoveToElement(mainMenu);
+
+           // IWebElement subMenu = driver.FindElement(By.XPath("//div/ul[@id='nav']/li[2]/ul/li[3]/a"));
+            actions.Click().Build().Perform();
+            Thread.Sleep(10000);
 
 
-       
+
+
         }
     }
 }

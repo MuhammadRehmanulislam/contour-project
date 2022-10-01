@@ -1,4 +1,4 @@
-﻿using contour_project;
+﻿
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace contour_project
 {
-    public class SignUp : baseclass
+    internal class invalidSignup : baseclass
     {
         By account = By.XPath("//span[text()='Account']");
         By registe = By.XPath("//a[@title='Register']");
@@ -22,7 +22,7 @@ namespace contour_project
         By signup = By.XPath("//span[text()='Sign up']");
 
 
-        public void signup1(string fname, string email1, string password, string capass, string cap)
+        public void invalidSignup1(string fname, string email1, string password, string capass, string cap)
         {
             Click(account);
             Click(registe);

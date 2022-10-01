@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace contour_project
 {
-    internal class LogIn : baseclass
+    public class LogIn : baseclass
     {
 
         By account = By.XPath("//span[text()='Account']");

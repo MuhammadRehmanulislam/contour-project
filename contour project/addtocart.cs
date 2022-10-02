@@ -10,17 +10,22 @@ namespace contour_project
 {
     public class addtocart : baseclass
     {
-        By hover = By.XPath("(//span[text()='Ready To Wear'])[1]");
         By casual = By.Id("Casuals");
-
-        
+        By hower = By.XPath("(//span[text()='Ready To Wear'])[1]");
+        By suit = By.Id("product-collection-image-38768");
+        By small = By.Id("swatch30");
+        By addcart = By.XPath("//button[@title='Add to Bag']");
 
 
         public void addtoCart()
         {
-            
+            hover(hower);
             Click(casual);
-
+            scroll();
+            Click(suit);
+            Click(small);
+            scroll();
+            Click(addcart);
 
         }
     }

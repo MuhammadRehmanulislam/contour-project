@@ -26,7 +26,8 @@ namespace contour_project
             Click(login);
             Write(emailid, email);
             Write(password, pass);
-           // Write(captcha, capt);
+            // Write(captcha, capt);
+            Click(captcha);
             Thread.Sleep(15000);
             Click(signin);
         }

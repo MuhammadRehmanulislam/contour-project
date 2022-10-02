@@ -32,30 +32,26 @@ namespace contour_project
             //string user = TestContext.DataRow["username"].ToString();
             //string pass = TestContext.DataRow["password"].ToString();
 
+            
             // LogIn log = new LogIn();
             // log.login1(user, pass);
 
 
-            //  SignUp sign = new SignUp();
-            //  sign.signup1("Rehman", "rehmanmani247@gmail.com", "Rehman1122@", "Rehman1122@", "");
+            
 
-            //invalidSignup sign = new invalidSignup();
-            //sign.invalidSignup1("Rehman", "rehmanmani247gmail.com", "Rehman1122", "Rehman1122@", "");
+            
 
 
             //log.login1("rehmanmani247@gmail.com", "Rehman1122@", "");
 
-            //invalidLogin invlogin = new invalidLogin();
-            //invlogin.invalidlogin1("rehmanmani247@gmail.com", "Rehman1122", "");
+            
 
             //Search srch = new Search();
             //srch.searchh("winter");
 
-            //searchOnly srch = new searchOnly();
-            //srch.searchonly1("winter");
+            
 
-            //checkout chk = new checkout();
-            //chk.checkout1("rehmanmani247@gmail.com", "Rehman1122@", "winter");
+            
 
             // IWebDriver driver;
 
@@ -67,21 +63,144 @@ namespace contour_project
             //driver.FindElement(By.Id("Casuals")).Click();
             //cart.addtoCart();
 
-            Thread.Sleep(10000);
-            IWebElement mainMenu = driver.FindElement(By.XPath("(//span[text()='Ready To Wear'])[1]"));
-            Thread.Sleep(10000);
-
-            Actions actions = new Actions(driver);
-
-            actions.MoveToElement(mainMenu);
-
-           // IWebElement subMenu = driver.FindElement(By.XPath("//div/ul[@id='nav']/li[2]/ul/li[3]/a"));
-            actions.Click().Build().Perform();
-            Thread.Sleep(10000);
+            
 
 
+        }
 
+        [TestMethod]
+        public void signup()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
 
+            SignUp sign = new SignUp();
+            sign.signup1("Rehman", "rehmanmani247@gmail.com", "Rehman1122@", "Rehman1122@", "");
+        }
+
+        [TestMethod]
+        public void invalidSignup()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+
+            invalidSignup sign = new invalidSignup();
+            sign.invalidSignup1("Rehman", "rehmanmani247gmail.com", "Rehman1122", "Rehman1122@", "");
+        }
+
+        [TestMethod]
+        public void login()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+
+             LogIn log = new LogIn();
+             log.login1("rehmanmani247@gmail.com", "Rehman1122@");
+        }
+
+        [TestMethod]
+        public void invalidLogin()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+
+            invalidLogin invlogin = new invalidLogin();
+            invlogin.invalidlogin1("rehmanmani247@gmail.com", "Rehman1122", "");
+        }
+
+        [TestMethod]
+        public void search()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+
+            Search srch = new Search();
+            srch.searchh("winter");
+        }
+
+        [TestMethod]
+        public void searchOnly()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+
+            searchOnly srch = new searchOnly();
+            srch.searchonly1("winter");
+        }
+
+        [TestMethod]
+        public void addtocart()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+
+            addtocart cart = new addtocart();
+            cart.addtoCart();
+        }
+
+        [TestMethod]
+        public void checkout()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+
+            checkout chk = new checkout();
+            chk.checkout1("rehmanmani247@gmail.com", "Rehman1122@", "winter");
+        }
+
+        //[TestMethod]
+        //public void rabia()
+        //{
+        //    IWebDriver driver = new ChromeDriver();
+        //    driver.Url = "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers";
+
+        //    Thread.Sleep(30000);
+
+        //    driver.FindElement(By.Id("(//div[@class='oxd-select-text--after'])[1]")).Click();
+        //    driver.FindElement(By.Id("(//div[text()='ESS'])[1]")).Click();
+
+        //}
+
+        //[TestMethod]
+        //public void irfan()
+        //{
+        //    IWebDriver driver = new ChromeDriver();
+        //    driver.Url = "https://www.junaidjamshed.com/";
+
+        //    irfan grid1 = new irfan();
+        //    grid1.view();
+
+        //}
+
+        [TestMethod]
+        public void loginaddtocart()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+
+            LogIn log = new LogIn();
+            log.login1("rehmanmani247@gmail.com", "Rehman1122@");
+
+            addtocart cart = new addtocart();
+            cart.addtoCart();
         }
     }
 }

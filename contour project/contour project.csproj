@@ -63,6 +63,7 @@
     <Compile Include="filter.cs" />
     <Compile Include="invalidLogin.cs" />
     <Compile Include="invalidSignup.cs" />
+    <Compile Include="irfan.cs" />
     <Compile Include="login.cs" />
     <Compile Include="search.cs" />
     <Compile Include="searchOnly.cs" />

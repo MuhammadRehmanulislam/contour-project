@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contour project", "contour project\contour project.csproj", "{6197B2A0-93AE-4008-9AB5-E56BEE9125FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contour_project", "contour_project\contour_project.csproj", "{6197B2A0-93AE-4008-9AB5-E56BEE9125FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

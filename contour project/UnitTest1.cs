@@ -164,6 +164,18 @@ namespace contour_project
             chk.checkout1("rehmanmani247@gmail.com", "Rehman1122@", "winter");
         }
 
+        [TestMethod]
+        public void filter()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+
+            filter fltr = new filter();
+            fltr.filters();
+        }
+
         //[TestMethod]
         //public void rabia()
         //{

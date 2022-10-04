@@ -12,12 +12,16 @@ namespace contour_project
 {
     public class baseclass
     {
+          private static readonly log4net.ILog log =
+          log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+
         public static ChromeDriver driver;
 
         public static void SeleniumInit(string browser)
 
         {
-
+            log.Info("Application is working");
             driver = new ChromeDriver();
 
         }
@@ -45,7 +49,7 @@ namespace contour_project
             driver.FindElement(by).Click();
 
         }
-        ///
+ 
         public static void max()
 
         {

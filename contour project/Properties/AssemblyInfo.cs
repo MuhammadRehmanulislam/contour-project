@@ -3,11 +3,11 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: log4net.Config.XmlConfigurator(Watch = true)]
-[assembly: AssemblyTitle("contour project")]
+[assembly: AssemblyTitle("contour_project")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("contour project")]
+[assembly: AssemblyProduct("contour_project")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

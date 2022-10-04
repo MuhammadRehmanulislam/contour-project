@@ -214,5 +214,18 @@ namespace contour_project
             addtocart cart = new addtocart();
             cart.addtoCart();
         }
+
+        [TestMethod]
+        public void sortt1()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+          //  wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+
+            wait();
+            sortby sort = new sortby();
+            sort.sortt();
+        }
     }
 }

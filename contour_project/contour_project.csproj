@@ -65,15 +65,18 @@
     <Compile Include="addtocart.cs" />
     <Compile Include="baseclass.cs" />
     <Compile Include="checkout.cs" />
+    <Compile Include="contactus.cs" />
     <Compile Include="filter.cs" />
     <Compile Include="invalidLogin.cs" />
     <Compile Include="invalidSignup.cs" />
     <Compile Include="irfan.cs" />
     <Compile Include="login.cs" />
+    <Compile Include="newsletter.cs" />
     <Compile Include="search.cs" />
     <Compile Include="searchOnly.cs" />
     <Compile Include="signup.cs" />
     <Compile Include="sortby.cs" />
+    <Compile Include="storelocation.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

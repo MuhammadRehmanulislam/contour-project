@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="3fc6a61b-0e95-4c1b-a389-c9ca1721b418" name="MRehm@DESKTOP-6ECPE3T 2022-10-05 11:18:56" runUser="DESKTOP-6ECPE3T\MRehm" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-10-05T11:18:56.8362262+05:00" queuing="2022-10-05T11:18:56.8362262+05:00" start="2022-10-05T11:18:08.3914904+05:00" finish="2022-10-05T11:36:56.6055269+05:00" />
+  <TestSettings name="default" id="14355e2d-9ad9-4212-b17b-f6118c6a457f">
+    <Deployment runDeploymentRoot="MRehm_DESKTOP-6ECPE3T_2022-10-05_11_18_56" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="342e7a4a-9d2d-411d-ac76-f92b1294e25c" testId="fb635159-1537-420a-a137-04cd48ff2dcf" testName="searchOnly" computerName="DESKTOP-6ECPE3T" duration="00:01:13.7986426" startTime="2022-10-05T11:26:19.3290612+05:00" endTime="2022-10-05T11:27:33.1284856+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="342e7a4a-9d2d-411d-ac76-f92b1294e25c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method contour_project.UnitTest1.searchOnly threw exception: &#xD;
+OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:59424/session/6c53af7ce825ef56adfccea85532995e/url timed out after 60 seconds. ---&gt; System.Threading.Tasks.TaskCanceledException: A task was canceled.</Message>
+          <StackTrace>    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+--- End of inner exception stack trace ---&#xD;
+    at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.set_Url(String value)&#xD;
+   at contour_project.baseclass.OpenUrl(String url) in C:\Users\MRehm\source\repos\contour-project\contour_project\baseclass.cs:line 79&#xD;
+   at contour_project.UnitTest1.searchOnly() in C:\Users\MRehm\source\repos\contour-project\contour_project\UnitTest1.cs:line 137&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ecef9740-6136-4b79-a137-fe24f6e35044" testId="27c266a0-7465-464f-aab3-c6ab2710dcd7" testName="login" computerName="DESKTOP-6ECPE3T" duration="00:01:09.1758106" startTime="2022-10-05T11:21:27.1511685+05:00" endTime="2022-10-05T11:22:36.3276802+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ecef9740-6136-4b79-a137-fe24f6e35044">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method contour_project.UnitTest1.login threw exception: &#xD;
+OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:59195/session/399ec79f50df0341bfc2f9ea4a4dc30d/url timed out after 60 seconds. ---&gt; System.Threading.Tasks.TaskCanceledException: A task was canceled.</Message>
+          <StackTrace>    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+--- End of inner exception stack trace ---&#xD;
+    at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.set_Url(String value)&#xD;
+   at contour_project.baseclass.OpenUrl(String url) in C:\Users\MRehm\source\repos\contour-project\contour_project\baseclass.cs:line 79&#xD;
+   at contour_project.UnitTest1.login() in C:\Users\MRehm\source\repos\contour-project\contour_project\UnitTest1.cs:line 101&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="54e4268b-4638-4f5e-8e66-0091ffb7267a" testId="1cca3216-fb33-4412-aded-31970b848bdd" testName="addtocart" computerName="DESKTOP-6ECPE3T" duration="00:02:06.0834680" startTime="2022-10-05T11:27:33.1294837+05:00" endTime="2022-10-05T11:29:39.2130281+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="54e4268b-4638-4f5e-8e66-0091ffb7267a" />
+    <UnitTestResult executionId="18295055-61ec-41f3-94c4-d59e0c87600f" testId="73b71de3-36e8-4ded-a0ce-a75cfc114c84" testName="search" computerName="DESKTOP-6ECPE3T" duration="00:01:56.3254297" startTime="2022-10-05T11:24:23.0023712+05:00" endTime="2022-10-05T11:26:19.3280644+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18295055-61ec-41f3-94c4-d59e0c87600f" />
+    <UnitTestResult executionId="f5fdbbf2-eee3-4c84-8bdb-912980343bdc" testId="b960acc4-ddb3-4f0e-ac01-d0a37d79171e" testName="sortt1" computerName="DESKTOP-6ECPE3T" duration="00:01:41.1565735" startTime="2022-10-05T11:35:13.0480461+05:00" endTime="2022-10-05T11:36:54.3764775+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5fdbbf2-eee3-4c84-8bdb-912980343bdc" />
+    <UnitTestResult executionId="73a9eb38-5809-44c3-b8a9-1f2197fd53c5" testId="953c9dcc-8a67-4d24-aab7-7f9835fa2589" testName="loginaddtocart" computerName="DESKTOP-6ECPE3T" duration="00:02:52.5740299" startTime="2022-10-05T11:32:20.4726650+05:00" endTime="2022-10-05T11:35:13.0470507+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="73a9eb38-5809-44c3-b8a9-1f2197fd53c5" />
+    <UnitTestResult executionId="e80caad2-a0ea-40d3-9448-cce40e651c9c" testId="a39bbdd1-ae51-4650-8f21-8d8e2bbaaae7" testName="TestMethod1" computerName="DESKTOP-6ECPE3T" duration="00:00:44.2671206" startTime="2022-10-05T11:18:12.1145296+05:00" endTime="2022-10-05T11:18:56.6776322+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e80caad2-a0ea-40d3-9448-cce40e651c9c" />
+    <UnitTestResult executionId="1675f86e-c5c9-4bed-b7ee-527afebbd3d3" testId="b3446379-b358-4812-ab47-20128b279f88" testName="filter" computerName="DESKTOP-6ECPE3T" duration="00:01:32.7258834" startTime="2022-10-05T11:30:47.7451023+05:00" endTime="2022-10-05T11:32:20.4716675+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1675f86e-c5c9-4bed-b7ee-527afebbd3d3">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method contour_project.UnitTest1.filter threw exception: &#xD;
+OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:59589/session/3ccabd77c23f78ef94b1c215ea6cd150/url timed out after 60 seconds. ---&gt; System.Threading.Tasks.TaskCanceledException: A task was canceled.</Message>
+          <StackTrace>    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+--- End of inner exception stack trace ---&#xD;
+    at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.set_Url(String value)&#xD;
+   at contour_project.baseclass.OpenUrl(String url) in C:\Users\MRehm\source\repos\contour-project\contour_project\baseclass.cs:line 79&#xD;
+   at contour_project.UnitTest1.filter() in C:\Users\MRehm\source\repos\contour-project\contour_project\UnitTest1.cs:line 173&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="aa7297f9-1959-43bc-bbb0-424e4efef997" testId="7b04d54d-bf9c-4b3d-a800-bb06128add95" testName="invalidLogin" computerName="DESKTOP-6ECPE3T" duration="00:01:46.6700782" startTime="2022-10-05T11:22:36.3296735+05:00" endTime="2022-10-05T11:24:23.0003748+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aa7297f9-1959-43bc-bbb0-424e4efef997">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method contour_project.UnitTest1.invalidLogin threw exception: &#xD;
+OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:59239/session/c2c3cfd68a0dab089e2110c94efaadf8/element/4485d612-3a4c-4d7f-ae13-ae7e383cba91/click timed out after 60 seconds. ---&gt; System.Threading.Tasks.TaskCanceledException: A task was canceled.</Message>
+          <StackTrace>    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+--- End of inner exception stack trace ---&#xD;
+    at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebElement.Click()&#xD;
+   at contour_project.baseclass.Click(By by) in C:\Users\MRehm\source\repos\contour-project\contour_project\baseclass.cs:line 49&#xD;
+   at contour_project.invalidLogin.invalidlogin1(String email, String pass, String cap) in C:\Users\MRehm\source\repos\contour-project\contour_project\invalidLogin.cs:line 25&#xD;
+   at contour_project.UnitTest1.invalidLogin() in C:\Users\MRehm\source\repos\contour-project\contour_project\UnitTest1.cs:line 116&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e69f2aed-2ccc-49c1-95e2-b38d1dacd78e" testId="0b3604ff-5b62-4c13-a0b7-3beecd35341f" testName="invalidSignup" computerName="DESKTOP-6ECPE3T" duration="00:01:24.4303854" startTime="2022-10-05T11:20:02.7185482+05:00" endTime="2022-10-05T11:21:27.1491531+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e69f2aed-2ccc-49c1-95e2-b38d1dacd78e" />
+    <UnitTestResult executionId="f9ad8cf5-0dd5-473f-b357-bb137b1b14dd" testId="9308049d-5df6-474c-9d34-f958b9cbc40a" testName="checkout" computerName="DESKTOP-6ECPE3T" duration="00:01:08.5291413" startTime="2022-10-05T11:29:39.2140243+05:00" endTime="2022-10-05T11:30:47.7441008+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9ad8cf5-0dd5-473f-b357-bb137b1b14dd">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method contour_project.UnitTest1.checkout threw exception: &#xD;
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='skip-link skip-cart']"}
+  (Session info: chrome=106.0.5249.91)</Message>
+          <StackTrace>    at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse, String commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)&#xD;
+   at OpenQA.Selenium.By.&lt;.ctor&gt;b__11_0(ISearchContext context)&#xD;
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)&#xD;
+   at OpenQA.Selenium.WebDriver.FindElement(By by)&#xD;
+   at contour_project.baseclass.Click(By by) in C:\Users\MRehm\source\repos\contour-project\contour_project\baseclass.cs:line 49&#xD;
+   at contour_project.checkout.checkout1(String email, String pass, String searcch) in C:\Users\MRehm\source\repos\contour-project\contour_project\checkout.cs:line 19&#xD;
+   at contour_project.UnitTest1.checkout() in C:\Users\MRehm\source\repos\contour-project\contour_project\UnitTest1.cs:line 164&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0710c8e1-d60b-4e23-b5b1-0fdb2297c7bb" testId="18b98b50-e758-4dc7-b287-f2c98634e258" testName="signup" computerName="DESKTOP-6ECPE3T" duration="00:01:06.0014413" startTime="2022-10-05T11:18:56.7155322+05:00" endTime="2022-10-05T11:20:02.7175420+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0710c8e1-d60b-4e23-b5b1-0fdb2297c7bb">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method contour_project.UnitTest1.signup threw exception: &#xD;
+OpenQA.Selenium.WebDriverException: The HTTP request to the remote WebDriver server for URL http://localhost:59074/session/915c510e32a94d89e01a22c22c63f634/url timed out after 60 seconds. ---&gt; System.Threading.Tasks.TaskCanceledException: A task was canceled.</Message>
+          <StackTrace>    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.&lt;MakeHttpRequest&gt;d__35.MoveNext()&#xD;
+--- End of stack trace from previous location where exception was thrown ---&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+--- End of inner exception stack trace ---&#xD;
+    at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)&#xD;
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)&#xD;
+   at OpenQA.Selenium.WebDriver.set_Url(String value)&#xD;
+   at contour_project.baseclass.OpenUrl(String url) in C:\Users\MRehm\source\repos\contour-project\contour_project\baseclass.cs:line 79&#xD;
+   at contour_project.UnitTest1.signup() in C:\Users\MRehm\source\repos\contour-project\contour_project\UnitTest1.cs:line 77&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="signup" storage="c:\users\mrehm\source\repos\contour-project\contour_project\bin\debug\contour_project.dll" id="18b98b50-e758-4dc7-b287-f2c98634e258">
+      <Execution id="0710c8e1-d60b-4e23-b5b1-0fdb2297c7bb" />
+      <TestMethod codeBase="C:\Users\MRehm\source\repos\contour-project\contour_project\bin\Debug\contour_project.dll" adapterTypeName="executor://mstestadapter/v2" className="contour_project.UnitTest1" name="signup" />
+    </UnitTest>
+    <UnitTest name="searchOnly" storage="c:\users\mrehm\source\repos\contour-project\contour_project\bin\debug\contour_project.dll" id="fb635159-1537-420a-a137-04cd48ff2dcf">
+      <Execution id="342e7a4a-9d2d-411d-ac76-f92b1294e25c" />
+      <TestMethod codeBase="C:\Users\MRehm\source\repos\contour-project\contour_project\bin\Debug\contour_project.dll" adapterTypeName="executor://mstestadapter/v2" className="contour_project.UnitTest1" name="searchOnly" />
+    </UnitTest>
+    <UnitTest name="invalidSignup" storage="c:\users\mrehm\source\repos\contour-project\contour_project\bin\debug\contour_project.dll" id="0b3604ff-5b62-4c13-a0b7-3beecd35341f">
+      <Execution id="e69f2aed-2ccc-49c1-95e2-b38d1dacd78e" />
+      <TestMethod codeBase="C:\Users\MRehm\source\repos\contour-project\contour_project\bin\Debug\contour_project.dll" adapterTypeName="executor://mstestadapter/v2" className="contour_project.UnitTest1" name="invalidSignup" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\users\mrehm\source\repos\contour-project\contour_project\bin\debug\contour_project.dll" id="a39bbdd1-ae51-4650-8f21-8d8e2bbaaae7">
+      <Execution id="e80caad2-a0ea-40d3-9448-cce40e651c9c" />
+      <TestMethod codeBase="C:\Users\MRehm\source\repos\contour-project\contour_project\bin\Debug\contour_project.dll" adapterTypeName="executor://mstestadapter/v2" className="contour_project.UnitTest1" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="checkout" storage="c:\users\mrehm\source\repos\contour-project\contour_project\bin\debug\contour_project.dll" id="9308049d-5df6-474c-9d34-f958b9cbc40a">
+      <Execution id="f9ad8cf5-0dd5-473f-b357-bb137b1b14dd" />
+      <TestMethod codeBase="C:\Users\MRehm\source\repos\contour-project\contour_project\bin\Debug\contour_project.dll" adapterTypeName="executor://mstestadapter/v2" className="contour_project.UnitTest1" name="checkout" />
+    </UnitTest>
+    <UnitTest name="loginaddtocart" storage="c:\users\mrehm\source\repos\contour-project\contour_project\bin\debug\contour_project.dll" id="953c9dcc-8a67-4d24-aab7-7f9835fa2589">
+      <Execution id="73a9eb38-5809-44c3-b8a9-1f2197fd53c5" />
+      <TestMethod codeBase="C:\Users\MRehm\source\repos\contour-project\contour_project\bin\Debug\contour_project.dll" adapterTypeName="executor://mstestadapter/v2" className="contour_project.UnitTest1" name="loginaddtocart" />
+    </UnitTest>
+    <UnitTest name="invalidLogin" storage="c:\users\mrehm\source\repos\contour-project\contour_project\bin\debug\contour_project.dll" id="7b04d54d-bf9c-4b3d-a800-bb06128add95">
+      <Execution id="aa7297f9-1959-43bc-bbb0-424e4efef997" />
+      <TestMethod codeBase="C:\Users\MRehm\source\repos\contour-project\contour_project\bin\Debug\contour_project.dll" adapterTypeName="executor://mstestadapter/v2" className="contour_project.UnitTest1" name="invalidLogin" />
+    </UnitTest>
+    <UnitTest name="login" storage="c:\users\mrehm\source\repos\contour-project\contour_project\bin\debug\contour_project.dll" id="27c266a0-7465-464f-aab3-c6ab2710dcd7">
+      <Execution id="ecef9740-6136-4b79-a137-fe24f6e35044" />
+      <TestMethod codeBase="C:\Users\MRehm\source\repos\contour-project\contour_project\bin\Debug\contour_project.dll" adapterTypeName="executor://mstestadapter/v2" className="contour_project.UnitTest1" name="login" />
+    </UnitTest>
+    <UnitTest name="filter" storage="c:\users\mrehm\source\repos\contour-project\contour_project\bin\debug\contour_project.dll" id="b3446379-b358-4812-ab47-20128b279f88">
+      <Execution id="1675f86e-c5c9-4bed-b7ee-527afebbd3d3" />
+      <TestMethod codeBase="C:\Users\MRehm\source\repos\contour-project\contour_project\bin\Debug\contour_project.dll" adapterTypeName="executor://mstestadapter/v2" className="contour_project.UnitTest1" name="filter" />
+    </UnitTest>
+    <UnitTest name="search" storage="c:\users\mrehm\source\repos\contour-project\contour_project\bin\debug\contour_project.dll" id="73b71de3-36e8-4ded-a0ce-a75cfc114c84">
+      <Execution id="18295055-61ec-41f3-94c4-d59e0c87600f" />
+      <TestMethod codeBase="C:\Users\MRehm\source\repos\contour-project\contour_project\bin\Debug\contour_project.dll" adapterTypeName="executor://mstestadapter/v2" className="contour_project.UnitTest1" name="search" />
+    </UnitTest>
+    <UnitTest name="sortt1" storage="c:\users\mrehm\source\repos\contour-project\contour_project\bin\debug\contour_project.dll" id="b960acc4-ddb3-4f0e-ac01-d0a37d79171e">
+      <Execution id="f5fdbbf2-eee3-4c84-8bdb-912980343bdc" />
+      <TestMethod codeBase="C:\Users\MRehm\source\repos\contour-project\contour_project\bin\Debug\contour_project.dll" adapterTypeName="executor://mstestadapter/v2" className="contour_project.UnitTest1" name="sortt1" />
+    </UnitTest>
+    <UnitTest name="addtocart" storage="c:\users\mrehm\source\repos\contour-project\contour_project\bin\debug\contour_project.dll" id="1cca3216-fb33-4412-aded-31970b848bdd">
+      <Execution id="54e4268b-4638-4f5e-8e66-0091ffb7267a" />
+      <TestMethod codeBase="C:\Users\MRehm\source\repos\contour-project\contour_project\bin\Debug\contour_project.dll" adapterTypeName="executor://mstestadapter/v2" className="contour_project.UnitTest1" name="addtocart" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="fb635159-1537-420a-a137-04cd48ff2dcf" executionId="342e7a4a-9d2d-411d-ac76-f92b1294e25c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27c266a0-7465-464f-aab3-c6ab2710dcd7" executionId="ecef9740-6136-4b79-a137-fe24f6e35044" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1cca3216-fb33-4412-aded-31970b848bdd" executionId="54e4268b-4638-4f5e-8e66-0091ffb7267a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73b71de3-36e8-4ded-a0ce-a75cfc114c84" executionId="18295055-61ec-41f3-94c4-d59e0c87600f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b960acc4-ddb3-4f0e-ac01-d0a37d79171e" executionId="f5fdbbf2-eee3-4c84-8bdb-912980343bdc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="953c9dcc-8a67-4d24-aab7-7f9835fa2589" executionId="73a9eb38-5809-44c3-b8a9-1f2197fd53c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a39bbdd1-ae51-4650-8f21-8d8e2bbaaae7" executionId="e80caad2-a0ea-40d3-9448-cce40e651c9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3446379-b358-4812-ab47-20128b279f88" executionId="1675f86e-c5c9-4bed-b7ee-527afebbd3d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b04d54d-bf9c-4b3d-a800-bb06128add95" executionId="aa7297f9-1959-43bc-bbb0-424e4efef997" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0b3604ff-5b62-4c13-a0b7-3beecd35341f" executionId="e69f2aed-2ccc-49c1-95e2-b38d1dacd78e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9308049d-5df6-474c-9d34-f958b9cbc40a" executionId="f9ad8cf5-0dd5-473f-b357-bb137b1b14dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18b98b50-e758-4dc7-b287-f2c98634e258" executionId="0710c8e1-d60b-4e23-b5b1-0fdb2297c7bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="12" executed="12" passed="6" failed="6" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

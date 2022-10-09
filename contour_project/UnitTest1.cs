@@ -19,7 +19,7 @@ namespace contour_project
         //    set { instance = value; }
         //    get { return instance; }
         //}
-        [TestMethod]
+       // [TestMethod]
        // [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "datalog.xml", "Login", DataAccessMethod.Sequential)]
         public void TestMethod1()
         {
@@ -100,8 +100,8 @@ namespace contour_project
             wait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
-             LogIn log = new LogIn();
-             log.login1("rehmanmani247@gmail.com", "Rehman1122@");
+            LogIn log = new LogIn();
+            log.login1("rehmanmani247@gmail.com", "Rehman1122@");
         }
 
         [TestMethod]
@@ -176,29 +176,29 @@ namespace contour_project
             fltr.filters();
         }
 
-        //[TestMethod]
-        //public void rabia()
-        //{
-        //    IWebDriver driver = new ChromeDriver();
-        //    driver.Url = "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers";
+        [TestMethod]
+        public void rabia()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers";
 
-        //    Thread.Sleep(30000);
+            Thread.Sleep(30000);
 
-        //    driver.FindElement(By.Id("(//div[@class='oxd-select-text--after'])[1]")).Click();
-        //    driver.FindElement(By.Id("(//div[text()='ESS'])[1]")).Click();
+            driver.FindElement(By.Id("(//div[@class='oxd-select-text--after'])[1]")).Click();
+            driver.FindElement(By.Id("(//div[text()='ESS'])[1]")).Click();
 
-        //}
+        }
 
-        //[TestMethod]
-        //public void irfan()
-        //{
-        //    IWebDriver driver = new ChromeDriver();
-        //    driver.Url = "https://www.junaidjamshed.com/";
+        [TestMethod]
+        public void irfan()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "https://www.junaidjamshed.com/";
 
-        //    irfan grid1 = new irfan();
-        //    grid1.view();
+            irfan grid1 = new irfan();
+            grid1.view();
 
-        //}
+        }
 
         [TestMethod]
         public void loginaddtocart()
@@ -220,12 +220,67 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-          //  wait();
+            //  wait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             wait();
             sortby sort = new sortby();
             sort.sortt();
+        }
+
+        [TestMethod]
+        public void newsletter()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            //  wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+            wait();
+
+            newsletter news = new newsletter();
+            news.newsletter1("rehmanmani247@gmail.com");
+
+        }
+
+
+        [TestMethod]
+        public void storelocation()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            //  wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+            wait();
+
+            storelocation stor = new storelocation();
+            stor.store();
+        }
+
+        public TestContext instance;
+        public TestContext TestContext
+        {
+            set { instance = value; }
+            get { return instance; }
+        }
+
+        [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "proj#", "proj.csv", DataAccessMethod.Sequential)]
+        public void contactus()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            //  wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+            wait();
+
+            string name = TestContext.DataRow["name"].ToString();
+            string email = TestContext.DataRow["email"].ToString();
+            string phone = TestContext.DataRow["phone"].ToString();
+            string comment = TestContext.DataRow["comment"].ToString();
+
+            contactus cont = new contactus();
+            cont.contactus1(name, email, phone, comment);
+
         }
     }
 }

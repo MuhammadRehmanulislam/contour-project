@@ -18,6 +18,7 @@ namespace contour_project
         By password = By.Id("pass");
         By captcha = By.Id("captcha_user_login");
         By signin = By.Id("send2");
+        By assrt = By.XPath("//h1[text()='Checkout']");
 
 
         public void login1(string email, string pass)
@@ -30,6 +31,15 @@ namespace contour_project
             Click(captcha);
             Thread.Sleep(15000);
             Click(signin);
+            if (captcha != null)
+            {
+                assert(assrt);
+                Console.WriteLine("Login Successful");
+            }
+            else
+            {
+                Console.WriteLine("Login Failed");
+            }
         }
 
         //IWebDriver driver1;

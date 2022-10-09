@@ -1,6 +1,8 @@
-﻿using OpenQA.Selenium;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +18,7 @@ namespace contour_project
           log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
 
-        public static ChromeDriver driver;
+        public static IWebDriver driver;
 
         public static void SeleniumInit(string browser)
 
@@ -119,6 +121,21 @@ namespace contour_project
 
             ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", element);
 
+        }
+
+        public void assert(By by)
+        {
+            IWebElement element = driver.FindElement(By.XPath(" //h2[text()='All Products']"));
+            bool status = element.Displayed;
+            Assert.AreEqual(status, true);
+            
+        }
+
+        public void dropDownItemSelect(By by, string value)
+        {
+            IWebElement drpDown = driver.FindElement(by);
+            SelectElement dropDownMenu = new SelectElement(drpDown);
+            dropDownMenu.SelectByValue(value);
         }
     }
 }

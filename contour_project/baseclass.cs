@@ -144,5 +144,13 @@ namespace contour_project
             SelectElement dropDownMenu = new SelectElement(drpDown);
             dropDownMenu.SelectByValue(value);
         }
+
+        public static void PlaybackWait(int miliSeconds)
+        {
+
+            Thread.Sleep(miliSeconds);
+
+        }
+
     }
 }

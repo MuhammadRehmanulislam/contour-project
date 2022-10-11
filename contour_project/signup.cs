@@ -31,9 +31,10 @@ namespace contour_project
             Write(pass, password);
             Write(cpass, capass);
             Click(captcha);
-            scroll();
-            wait(20);
+
+            PlaybackWait(20000);
             Write(captcha, cap);
+            scroll();
             Click(newsleter);
             // Write(newsleter, newsl);
             Click(signup);

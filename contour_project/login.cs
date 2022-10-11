@@ -30,7 +30,7 @@ namespace contour_project
             Write(password, pass);
             Click(captcha);
             Write(captcha, capt);
-            wait(20);
+            PlaybackWait(20000);
             scroll();
             Click(signin);
            // Click(home);

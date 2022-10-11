@@ -59,11 +59,11 @@ namespace contour_project
             driver.Manage().Window.Maximize();
 
         }
-        public static void wait()
+        public static void wait(int time)
 
         {
 
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(time);
 
         }
         ///
@@ -108,7 +108,14 @@ namespace contour_project
         {
             IJavaScriptExecutor js = driver as IJavaScriptExecutor;
             Thread.Sleep(2000);
-            js.ExecuteScript("window.scrollBy(0,600);");
+            js.ExecuteScript("window.scrollBy(0,500);");
+        }
+
+        public static void ScrollBy(int value, int value1)
+        {
+            IJavaScriptExecutor js = driver as IJavaScriptExecutor;
+
+            js.ExecuteScript("window.scrollBy({0},{1};", value, value1);
         }
 
         public void scrolltoelement(By by)

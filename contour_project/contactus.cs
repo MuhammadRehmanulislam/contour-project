@@ -33,7 +33,6 @@ namespace contour_project
             Click(comment);
             Write(comment, comment1);
             Click(submit);
-
         }
     }
 }

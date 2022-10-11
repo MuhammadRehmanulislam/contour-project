@@ -29,10 +29,10 @@ namespace contour_project
             Click(casual);
             Click(price);
             Click(secprice);
-            wait();
+            wait(30);
             Click(color);
             Click(clrslct);
-            wait();
+            wait(30);
             Click(size);
             Click(sizee);
             Click(select);

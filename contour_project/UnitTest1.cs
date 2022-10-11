@@ -25,7 +25,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait();
+            wait(30);
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             //string url = TestContext.DataRow["url"].ToString();
@@ -73,7 +73,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait();
+            wait(30);
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             SignUp sign = new SignUp();
@@ -85,7 +85,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait();
+            wait(30);
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             invalidSignup sign = new invalidSignup();
@@ -97,11 +97,11 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait();
+            wait(30);
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             LogIn log = new LogIn();
-            log.login1("rehmanmani247@gmail.com", "Rehman1122@");
+            log.login1("rehmanmani247@gmail.com", "Rehman1122@", " ");
         }
 
         [TestMethod]
@@ -109,7 +109,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait();
+            wait(30);
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             invalidLogin invlogin = new invalidLogin();
@@ -121,7 +121,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait();
+            wait(30);
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             Search srch = new Search();
@@ -133,7 +133,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait();
+            wait(30);
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             searchOnly srch = new searchOnly();
@@ -145,7 +145,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait();
+            wait(30);
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             addtocart cart = new addtocart();
@@ -157,7 +157,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait();
+            wait(30);
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             checkout chk = new checkout();
@@ -169,47 +169,47 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait();
+            wait(30);
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             filter fltr = new filter();
             fltr.filters();
         }
 
-        [TestMethod]
-        public void rabia()
-        {
-            IWebDriver driver = new ChromeDriver();
-            driver.Url = "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers";
+        //[TestMethod]
+        //public void rabia()
+        //{
+        //    IWebDriver driver = new ChromeDriver();
+        //    driver.Url = "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers";
 
-            Thread.Sleep(30000);
+        //    Thread.Sleep(30000);
 
-            driver.FindElement(By.Id("(//div[@class='oxd-select-text--after'])[1]")).Click();
-            driver.FindElement(By.Id("(//div[text()='ESS'])[1]")).Click();
+        //    driver.FindElement(By.Id("(//div[@class='oxd-select-text--after'])[1]")).Click();
+        //    driver.FindElement(By.Id("(//div[text()='ESS'])[1]")).Click();
 
-        }
+        //}
 
-        [TestMethod]
-        public void irfan()
-        {
-            IWebDriver driver = new ChromeDriver();
-            driver.Url = "https://www.junaidjamshed.com/";
+        //[TestMethod]
+        //public void irfan()
+        //{
+        //    IWebDriver driver = new ChromeDriver();
+        //    driver.Url = "https://www.junaidjamshed.com/";
 
-            irfan grid1 = new irfan();
-            grid1.view();
+        //    irfan grid1 = new irfan();
+        //    grid1.view();
 
-        }
+        //}
 
         [TestMethod]
         public void loginaddtocart()
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait();
+            wait(30);
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             LogIn log = new LogIn();
-            log.login1("rehmanmani247@gmail.com", "Rehman1122@");
+            log.login1("rehmanmani247@gmail.com", "Rehman1122@", " ");
 
             addtocart cart = new addtocart();
             cart.addtoCart();
@@ -223,7 +223,7 @@ namespace contour_project
             //  wait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
-            wait();
+            wait(30);
             sortby sort = new sortby();
             sort.sortt();
         }
@@ -235,7 +235,7 @@ namespace contour_project
             baseclass.max();
             //  wait();
             baseclass.OpenUrl("https://www.mariab.pk/");
-            wait();
+            wait(30);
 
             newsletter news = new newsletter();
             news.newsletter1("rehmanmani247@gmail.com");
@@ -250,7 +250,7 @@ namespace contour_project
             baseclass.max();
             //  wait();
             baseclass.OpenUrl("https://www.mariab.pk/");
-            wait();
+            wait(30);
 
             storelocation stor = new storelocation();
             stor.store();
@@ -271,7 +271,7 @@ namespace contour_project
             baseclass.max();
             //  wait();
             baseclass.OpenUrl("https://www.mariab.pk/");
-            wait();
+            wait(30);
 
             string name = TestContext.DataRow["name"].ToString();
             string email = TestContext.DataRow["email"].ToString();
@@ -281,6 +281,27 @@ namespace contour_project
             contactus cont = new contactus();
             cont.contactus1(name, email, phone, comment);
 
+        }
+
+        [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "proj1#", "proj1.csv", DataAccessMethod.Sequential)]
+        public void outofstock()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            //  wait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+            wait(30);
+
+            Search srch = new Search();
+            srch.searchh("winter");
+
+            string name = TestContext.DataRow["name"].ToString();
+            string phone = TestContext.DataRow["phone"].ToString();
+            string email = TestContext.DataRow["email"].ToString();
+
+            outofstock stock = new outofstock();
+            stock.stockout(name, phone, email);
         }
     }
 }

@@ -72,6 +72,7 @@
     <Compile Include="irfan.cs" />
     <Compile Include="login.cs" />
     <Compile Include="newsletter.cs" />
+    <Compile Include="outofstock.cs" />
     <Compile Include="search.cs" />
     <Compile Include="searchOnly.cs" />
     <Compile Include="signup.cs" />

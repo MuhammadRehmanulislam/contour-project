@@ -18,8 +18,8 @@ namespace contour_project
         By pass = By.Id("password");
         By cpass = By.Id("confirmation");
         By captcha = By.Id("captcha_user_create");
-        //  By newsleter = By.XPath("//label[text()='Sign Up for Newsletter']");
-        By signup = By.XPath("//span[text()='Sign up']");
+        By newsleter = By.XPath("//label[text()='Sign Up for Newsletter']");
+        By signup = By.Id("register_customer");
 
 
         public void signup1(string fname, string email1, string password, string capass, string cap)
@@ -30,10 +30,11 @@ namespace contour_project
             Write(email, email1);
             Write(pass, password);
             Write(cpass, capass);
-            Thread.Sleep(15000);
+            Click(captcha);
+            scroll();
+            wait(20);
             Write(captcha, cap);
-            //Thread.Sleep(15000);
-            //Click(newsleter);
+            Click(newsleter);
             // Write(newsleter, newsl);
             Click(signup);
 

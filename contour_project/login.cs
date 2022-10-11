@@ -19,27 +19,31 @@ namespace contour_project
         By captcha = By.Id("captcha_user_login");
         By signin = By.Id("send2");
         By assrt = By.XPath("//h1[text()='Checkout']");
+        By home = By.XPath("//img[@class='large']");
 
 
-        public void login1(string email, string pass)
+        public void login1(string email, string pass, string capt)
         {
             Click(account);
             Click(login);
             Write(emailid, email);
             Write(password, pass);
-            // Write(captcha, capt);
             Click(captcha);
-            Thread.Sleep(15000);
+            Write(captcha, capt);
+            wait(20);
+            scroll();
             Click(signin);
-            if (captcha != null)
-            {
-                assert(assrt);
-                Console.WriteLine("Login Successful");
-            }
-            else
-            {
-                Console.WriteLine("Login Failed");
-            }
+           // Click(home);
+            //if (captcha != null)
+            //{
+            //    assert(assrt);
+            //    Console.WriteLine("Login Successful");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Login Failed");
+            //}
+            
         }
 
         //IWebDriver driver1;

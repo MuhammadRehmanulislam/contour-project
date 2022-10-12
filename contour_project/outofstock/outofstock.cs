@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace contour_project
 {
-    public class outofstock : baseclass
+    public class outofStock : baseclass
     {
 
         By name = By.Id("notify-full-name");

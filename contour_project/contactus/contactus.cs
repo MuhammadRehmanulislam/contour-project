@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace contour_project
 {
-    public class contactus : baseclass
+    public class contactUs : baseclass
     {
         By contact = By.XPath("//a[text()='Contact Us']");
         By name = By.Id("name");

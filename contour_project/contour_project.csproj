@@ -62,22 +62,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addtocart.cs" />
+    <Compile Include="addtocart\addtocart.cs" />
+    <Compile Include="addtocart\testaddtocart.cs" />
     <Compile Include="baseclass.cs" />
-    <Compile Include="checkout.cs" />
-    <Compile Include="contactus.cs" />
-    <Compile Include="filter.cs" />
+    <Compile Include="checkout\checkout.cs" />
+    <Compile Include="checkout\testcheckout.cs" />
+    <Compile Include="contactus\contactus.cs" />
+    <Compile Include="contactus\testcontactus.cs" />
+    <Compile Include="filter\filter.cs" />
+    <Compile Include="filter\testFilter.cs" />
     <Compile Include="invalidLogin.cs" />
     <Compile Include="invalidSignup.cs" />
     <Compile Include="irfan.cs" />
-    <Compile Include="login.cs" />
-    <Compile Include="newsletter.cs" />
-    <Compile Include="outofstock.cs" />
-    <Compile Include="search.cs" />
-    <Compile Include="searchOnly.cs" />
-    <Compile Include="signup.cs" />
-    <Compile Include="sortby.cs" />
-    <Compile Include="storelocation.cs" />
+    <Compile Include="login\login.cs" />
+    <Compile Include="login\testlogin.cs" />
+    <Compile Include="newsletter\newsletter.cs" />
+    <Compile Include="newsletter\testnewsletter.cs" />
+    <Compile Include="outofstock\outofstock.cs" />
+    <Compile Include="outofstock\testoutofstock.cs" />
+    <Compile Include="searchonly\testsearchonly.cs" />
+    <Compile Include="search\search.cs" />
+    <Compile Include="searchonly\searchOnly.cs" />
+    <Compile Include="search\testsearch.cs" />
+    <Compile Include="signup\signup.cs" />
+    <Compile Include="signup\testsignup.cs" />
+    <Compile Include="sort\sortby.cs" />
+    <Compile Include="sort\testsort.cs" />
+    <Compile Include="storelocation\storelocation.cs" />
+    <Compile Include="storelocation\teststorelocation.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -87,6 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="loginaddtocart\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

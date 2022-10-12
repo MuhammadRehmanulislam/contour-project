@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace contour_project
 {
-    internal class filter : baseclass
+    internal class Filter : baseclass
     {
         By hower = By.XPath("(//span[text()='Ready To Wear'])[1]");
         By casual = By.Id("Casuals");
@@ -17,7 +17,7 @@ namespace contour_project
         By clrslct = By.XPath("//a[text()='Blue']");
         By size = By.XPath("//div[@class='select-filter Size']");
         By sizee = By.XPath("//li[@class='s size30']");
-        By select = By.Id("product-collection-image-37601");
+        By select = By.Id("product-collection-image-35783");
         By small = By.Id("swatch30");
         By addtocart = By.XPath("//button[@title='Add to Bag']");
 
@@ -29,10 +29,10 @@ namespace contour_project
             Click(casual);
             Click(price);
             Click(secprice);
-            wait(30);
+            ImplicitWait();
             Click(color);
             Click(clrslct);
-            wait(30);
+            ImplicitWait();
             Click(size);
             Click(sizee);
             Click(select);

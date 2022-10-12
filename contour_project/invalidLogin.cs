@@ -26,7 +26,7 @@ namespace contour_project
             Write(emailid, email);
             Write(password, pass);
             Write(captcha, cap);
-            PlaybackWait(15000);
+            PlaybackWait(20000);
             scroll();
             Click(signin);
         }

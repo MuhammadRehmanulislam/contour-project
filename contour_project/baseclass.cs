@@ -59,11 +59,11 @@ namespace contour_project
             driver.Manage().Window.Maximize();
 
         }
-        public static void wait(int time)
+        public static void ImplicitWait()
 
         {
 
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(time);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
 
         }
         ///

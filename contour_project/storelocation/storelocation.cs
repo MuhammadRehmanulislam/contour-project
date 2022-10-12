@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace contour_project
 {
-    public class storelocation : baseclass
+    public class storeLocation : baseclass
     {
         By loc = By.XPath("//a[text()='Store Locator']");
         By city = By.Id("city");

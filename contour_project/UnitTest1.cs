@@ -25,7 +25,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait(30);
+            ImplicitWait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             //string url = TestContext.DataRow["url"].ToString();
@@ -73,7 +73,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait(30);
+            ImplicitWait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             SignUp sign = new SignUp();
@@ -85,7 +85,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait(30);
+            ImplicitWait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             invalidSignup sign = new invalidSignup();
@@ -97,7 +97,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait(30);
+            ImplicitWait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             LogIn log = new LogIn();
@@ -109,7 +109,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait(30);
+            ImplicitWait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             invalidLogin invlogin = new invalidLogin();
@@ -121,7 +121,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait(30);
+            ImplicitWait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             Search srch = new Search();
@@ -133,7 +133,7 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait(30);
+            ImplicitWait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             searchOnly srch = new searchOnly();
@@ -145,10 +145,10 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait(30);
+            ImplicitWait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
-            addtocart cart = new addtocart();
+            Addtocart cart = new Addtocart();
             cart.addtoCart();
         }
 
@@ -157,11 +157,14 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait(30);
+            ImplicitWait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
-            checkout chk = new checkout();
-            chk.checkout1("rehmanmani247@gmail.com", "Rehman1122@", "winter");
+            Addtocart cart = new Addtocart();
+            cart.addtoCart();
+
+            Checkout chk = new Checkout();
+            chk.checkout1("winter", "rehmanmani247@gmail.com", "Rehman1122@");
         }
 
         [TestMethod]
@@ -169,10 +172,10 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait(30);
+            ImplicitWait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
-            filter fltr = new filter();
+            Filter fltr = new Filter();
             fltr.filters();
         }
 
@@ -205,13 +208,13 @@ namespace contour_project
         {
             baseclass.SeleniumInit("Chrome");
             baseclass.max();
-            wait(30);
+            ImplicitWait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
             LogIn log = new LogIn();
             log.login1("rehmanmani247@gmail.com", "Rehman1122@", " ");
 
-            addtocart cart = new addtocart();
+            Addtocart cart = new Addtocart();
             cart.addtoCart();
         }
 
@@ -223,7 +226,7 @@ namespace contour_project
             //  wait();
             baseclass.OpenUrl("https://www.mariab.pk/");
 
-            wait(30);
+            ImplicitWait();
             sortby sort = new sortby();
             sort.sortt();
         }
@@ -235,9 +238,9 @@ namespace contour_project
             baseclass.max();
             //  wait();
             baseclass.OpenUrl("https://www.mariab.pk/");
-            wait(30);
+            ImplicitWait();
 
-            newsletter news = new newsletter();
+            newsLetter news = new newsLetter();
             news.newsletter1("rehmanmani247@gmail.com");
 
         }
@@ -250,9 +253,9 @@ namespace contour_project
             baseclass.max();
             //  wait();
             baseclass.OpenUrl("https://www.mariab.pk/");
-            wait(30);
+            ImplicitWait();
 
-            storelocation stor = new storelocation();
+            storeLocation stor = new storeLocation();
             stor.store();
         }
 
@@ -271,14 +274,14 @@ namespace contour_project
             baseclass.max();
             //  wait();
             baseclass.OpenUrl("https://www.mariab.pk/");
-            wait(30);
+            ImplicitWait();
 
             string name = TestContext.DataRow["name"].ToString();
             string email = TestContext.DataRow["email"].ToString();
             string phone = TestContext.DataRow["phone"].ToString();
             string comment = TestContext.DataRow["comment"].ToString();
 
-            contactus cont = new contactus();
+            contactUs cont = new contactUs();
             cont.contactus1(name, email, phone, comment);
 
         }
@@ -291,7 +294,7 @@ namespace contour_project
             baseclass.max();
             //  wait();
             baseclass.OpenUrl("https://www.mariab.pk/");
-            wait(30);
+            ImplicitWait();
 
             Search srch = new Search();
             srch.searchh("winter");
@@ -300,7 +303,7 @@ namespace contour_project
             string phone = TestContext.DataRow["phone"].ToString();
             string email = TestContext.DataRow["email"].ToString();
 
-            outofstock stock = new outofstock();
+            outofStock stock = new outofStock();
             stock.stockout(name, phone, email);
         }
     }

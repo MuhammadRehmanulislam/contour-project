@@ -32,7 +32,7 @@ namespace contour_project
             Write(cpass, capass);
             Click(captcha);
 
-            PlaybackWait(20000);
+            PlaybackWait(30000);
             Write(captcha, cap);
             scroll();
             Click(newsleter);

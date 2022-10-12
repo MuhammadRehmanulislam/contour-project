@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace contour_project
 {
-   public class newsletter : baseclass
+   public class newsLetter : baseclass
     {
         By news = By.Id("newsletter");
         By subs = By.Id("submit");

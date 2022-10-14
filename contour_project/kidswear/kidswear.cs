@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,26 +7,24 @@ using System.Threading.Tasks;
 
 namespace contour_project
 {
-    public class Addtocart : baseclass
+    public class kidsWear : baseclass
     {
-        
-        By hower = By.XPath("(//span[text()='Ready To Wear'])[1]");
-        By casual = By.Id("Casuals");
-        By suit = By.Id("product-collection-image-39768");
-        By small = By.Id("swatch30");
+        By hower = By.XPath("(//span[text()='Kids'])[1]");
+        By kidd = By.XPath("(//span[text()='Kids'])[2]");
+        By suit = By.Id("product-collection-image-39880");
+        By size = By.Id("swatch46");
         By addcart = By.XPath("//button[@title='Add to Bag']");
 
 
-        public void addtoCart()
+        public void kids()
         {
             hover(hower);
-            Click(casual);
+            Click(kidd);
             scroll();
             Click(suit);
-            Click(small);
+            Click(size);
             scroll();
             Click(addcart);
-
         }
     }
 }

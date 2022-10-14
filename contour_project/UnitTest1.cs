@@ -306,5 +306,20 @@ namespace contour_project
             outofStock stock = new outofStock();
             stock.stockout(name, phone, email);
         }
+
+        [TestMethod]
+        public void kidswear()
+        {
+            baseclass.SeleniumInit("Chrome");
+            baseclass.max();
+            ImplicitWait();
+            baseclass.OpenUrl("https://www.mariab.pk/");
+
+            LogIn log = new LogIn();
+            log.login1("rehmanmani247@gmail.com", "Rehman1122@", " ");
+
+            kidsWear kid = new kidsWear();
+            kid.kids();
+        }
     }
 }

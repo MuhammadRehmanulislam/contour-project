@@ -71,8 +71,10 @@
     <Compile Include="contactus\testcontactus.cs" />
     <Compile Include="filter\filter.cs" />
     <Compile Include="filter\testFilter.cs" />
-    <Compile Include="invalidLogin.cs" />
-    <Compile Include="invalidSignup.cs" />
+    <Compile Include="kidswear\kidswear.cs" />
+    <Compile Include="kidswear\testKids.cs" />
+    <Compile Include="login\invalidLogin.cs" />
+    <Compile Include="signup\invalidSignup.cs" />
     <Compile Include="irfan.cs" />
     <Compile Include="login\login.cs" />
     <Compile Include="login\testlogin.cs" />

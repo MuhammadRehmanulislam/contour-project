@@ -22,7 +22,7 @@ namespace contour_project
         By signup = By.XPath("//span[text()='Sign up']");
 
 
-        public void invalidSignup1(string fname, string email1, string password, string capass, string cap)
+        public void invalidSignup1(string fname, string email1, string password, string capass)
         {
             Click(account);
             Click(registe);
@@ -30,9 +30,9 @@ namespace contour_project
             Write(email, email1);
             Write(pass, password);
             Write(cpass, capass);
-            Click(captcha);
+         //  Click(captcha);
             PlaybackWait(20000);
-            Write(captcha, cap);
+           // Write(captcha, cap);
             scroll();
             Click(newsleter);
             Click(signup);

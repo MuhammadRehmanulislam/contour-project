@@ -34,10 +34,10 @@ namespace contour_project.addtocart
         [TestMethod]
         public void addtocart()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
+            SeleniumInit("Chrome");
+            max();
             ImplicitWait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            OpenUrl();
 
             Addtocart cart = new Addtocart();
             cart.addtoCart();

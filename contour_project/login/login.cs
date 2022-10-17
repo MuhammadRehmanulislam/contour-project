@@ -22,18 +22,19 @@ namespace contour_project
         By home = By.XPath("//img[@class='large']");
 
 
-        public void login1(string email, string pass, string capt)
+        public void login1(string email, string pass)
         {
             Click(account);
             Click(login);
             Write(emailid, email);
             Write(password, pass);
-            Click(captcha);
-            Write(captcha, capt);
+            //Click(captcha);
+           // Write(captcha, capt);
             PlaybackWait(20000);
             scroll();
             Click(signin);
-           // Click(home);
+            Click(account);
+            // Click(home);
             //if (captcha != null)
             //{
             //    assert(assrt);
@@ -43,7 +44,7 @@ namespace contour_project
             //{
             //    Console.WriteLine("Login Failed");
             //}
-            
+
         }
 
         //IWebDriver driver1;

@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using AventStack.ExtentReports;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
@@ -28,30 +29,30 @@ namespace contour_project
 
         }
 
-        //public static void CloseDriver()
+        public static void CloseDriver()
+
+        {
+
+            driver.Close();
+
+        }
+
+        //public void Write(By by, string value)
 
         //{
 
-        //    driver.Close();
+        //    driver.FindElement(by).SendKeys(value);
 
         //}
 
-        public void Write(By by, string value)
+        //public  void Click(By by)
 
-        {
+        //{
 
-            driver.FindElement(by).SendKeys(value);
+        //    driver.FindElement(by).Click();
 
-        }
+        //}
 
-        public  void Click(By by)
-
-        {
-
-            driver.FindElement(by).Click();
-
-        }
- 
         public static void max()
 
         {
@@ -74,11 +75,11 @@ namespace contour_project
         //    driver.FindElement(by).Clear();
 
         //}
-        public static void OpenUrl(string url)
+        public static void OpenUrl()
 
         {
 
-            driver.Url = url;
+            driver.Url = "https://www.mariab.pk/";
 
         }
 
@@ -151,6 +152,47 @@ namespace contour_project
             Thread.Sleep(miliSeconds);
 
         }
+        public static void TakeScreenshot(string stepDetail)
+        {
+            string path = @"C:\Users\MRehm\source\repos\contour-project\contour_project\screenshot\" + "TestExecLog_" + DateTime.Now.ToString("yyyyMMddHHmmss");
+            Screenshot image_username = ((ITakesScreenshot)driver).GetScreenshot();
+            image_username.SaveAsFile(path + ".png", ScreenshotImageFormat.Png);
+            ExtentReport.exChildTest.Log(Status.Pass, stepDetail, MediaEntityBuilder.CreateScreenCaptureFromPath(path + ".png").Build());
+        }
 
+        public static void TakeScreenshot(Status status, string stepDetail)
+        {
+            string path = @"C:\Users\MRehm\source\repos\contour-project\contour_project\screenshot\" + "TestExecLog_" + DateTime.Now.ToString("yyyyMMddHHmmss");
+            Screenshot image_username = ((ITakesScreenshot)driver).GetScreenshot();
+            image_username.SaveAsFile(path + ".png", ScreenshotImageFormat.Png);
+            ExtentReport.exChildTest.Log(status, stepDetail, MediaEntityBuilder
+                .CreateScreenCaptureFromPath(path + ".png").Build());
+        }
+        public void Write(By by, string value)
+        {
+            try
+            {
+                driver.FindElement(by).SendKeys(value);
+                TakeScreenshot(Status.Pass, "Enter Text");
+            }
+            catch (Exception ex)
+            {
+
+                TakeScreenshot(Status.Fail, "Enter Text: " + ex.ToString());
+            }
+        }
+
+        public void Click(By by)
+        {
+            try
+            {
+                driver.FindElement(by).Click();
+                TakeScreenshot("Click Element");
+            }
+            catch (Exception ex)
+            {
+                TakeScreenshot(Status.Fail, "Click Element: " + ex.ToString());
+            }
+        }
     }
 }

@@ -34,10 +34,9 @@ namespace contour_project.sort
         [TestMethod]
         public void sortt1()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
-            //  wait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            SeleniumInit("Chrome");
+            max();
+            OpenUrl();
 
             ImplicitWait();
             sortby sort = new sortby();

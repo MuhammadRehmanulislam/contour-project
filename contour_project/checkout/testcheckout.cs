@@ -35,10 +35,10 @@ namespace contour_project.checkout
         [TestMethod]
         public void checkout()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
+            SeleniumInit("Chrome");
+            max();
             ImplicitWait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            OpenUrl();
 
             Addtocart cart = new Addtocart();
             cart.addtoCart();

@@ -22,7 +22,7 @@ namespace contour_project
         By signup = By.Id("register_customer");
 
 
-        public void signup1(string fname, string email1, string password, string capass, string cap)
+        public void signup1(string fname, string email1, string password, string capass)
         {
             Click(account);
             Click(registe);
@@ -30,10 +30,10 @@ namespace contour_project
             Write(email, email1);
             Write(pass, password);
             Write(cpass, capass);
-            Click(captcha);
+           // Click(captcha);
 
             PlaybackWait(30000);
-            Write(captcha, cap);
+           // Write(captcha, cap);
             scroll();
             Click(newsleter);
             // Write(newsleter, newsl);

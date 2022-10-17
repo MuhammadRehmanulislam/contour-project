@@ -34,10 +34,9 @@ namespace contour_project.newsletter
         [TestMethod]
         public void newsletter()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
-            //  wait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            SeleniumInit("Chrome");
+            max();
+            OpenUrl();
             ImplicitWait();
 
             newsLetter news = new newsLetter();

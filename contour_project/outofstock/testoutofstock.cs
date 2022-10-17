@@ -40,10 +40,9 @@ namespace contour_project.outofstock
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "proj1#", "proj1.csv", DataAccessMethod.Sequential)]
         public void outofstock()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
-            //  wait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            SeleniumInit("Chrome");
+            max();
+            OpenUrl();
             ImplicitWait();
 
             Search srch = new Search();

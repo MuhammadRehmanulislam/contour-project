@@ -14,25 +14,25 @@ namespace contour_project
       [TestMethod]
         public void signup()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
+            SeleniumInit("Chrome");
+            max();
             ImplicitWait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            OpenUrl();
 
             SignUp sign = new SignUp();
-            sign.signup1("Rehman", "rehmanmani247@gmail.com", "Rehman1122@", "Rehman1122@", "");
+            sign.signup1("Rehman", "rehmanmani247@gmail.com", "Rehman1122@", "Rehman1122@");
         }
     
     [TestMethod]
         public void invalidSignup()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
+            SeleniumInit("Chrome");
+            max();
             ImplicitWait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            OpenUrl();
 
             invalidSignup sign = new invalidSignup();
-            sign.invalidSignup1("Rehman", "rehmanmani247gmail.com", "Rehman1122", "Rehman1122@", "");
+            sign.invalidSignup1("Rehman", "rehmanmani247gmail.com", "Rehman1122", "Rehman1122@");
         }
     }
 }

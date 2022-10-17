@@ -5,9 +5,7 @@ using System.Text;
 
 namespace contour_project.filter
 {
-    /// <summary>
-    /// Summary description for testFilter
-    /// </summary>
+    
     [TestClass]
     public class testFilter : baseclass
     {
@@ -36,10 +34,10 @@ namespace contour_project.filter
         [TestMethod]
         public void filter()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
+            SeleniumInit("Chrome");
+            max();
             ImplicitWait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            OpenUrl();
 
             Filter fltr = new Filter();
             fltr.filters();

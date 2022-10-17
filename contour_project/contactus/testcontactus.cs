@@ -42,10 +42,10 @@ namespace contour_project.contactus
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "proj#", "proj.csv", DataAccessMethod.Sequential)]
         public void contactus()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
+            SeleniumInit("Chrome");
+            max();
             //  wait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            baseclass.OpenUrl();
             ImplicitWait();
 
             string name = TestContext.DataRow["name"].ToString();

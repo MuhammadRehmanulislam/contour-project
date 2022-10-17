@@ -14,10 +14,10 @@ namespace contour_project.searchonly
         [TestMethod]
         public void searchOnly()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
+            SeleniumInit("Chrome");
+            max();
             ImplicitWait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            OpenUrl();
 
             searchOnly srch = new searchOnly();
             srch.searchonly1("winter");// change 

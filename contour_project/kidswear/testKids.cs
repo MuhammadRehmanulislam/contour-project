@@ -34,13 +34,13 @@ namespace contour_project.kidswear
         [TestMethod]
         public void kidswear()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
+            SeleniumInit("Chrome");
+            max();
             ImplicitWait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            OpenUrl();
 
             LogIn log = new LogIn();
-            log.login1("rehmanmani247@gmail.com", "Rehman1122@", " ");
+            log.login1("rehmanmani247@gmail.com", "Rehman1122@");
 
             kidsWear kid = new kidsWear();
             kid.kids();

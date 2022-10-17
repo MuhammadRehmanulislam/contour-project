@@ -35,10 +35,10 @@ namespace contour_project.search
 
         public void search()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
+            SeleniumInit("Chrome");
+            max();
             ImplicitWait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            OpenUrl();
 
             Search srch = new Search();
             srch.searchh("winter");

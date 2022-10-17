@@ -34,10 +34,9 @@ namespace contour_project.storelocation
         [TestMethod]
         public void storelocation()
         {
-            baseclass.SeleniumInit("Chrome");
-            baseclass.max();
-            //  wait();
-            baseclass.OpenUrl("https://www.mariab.pk/");
+            SeleniumInit("Chrome");
+            max();
+            OpenUrl();
             ImplicitWait();
 
             storeLocation stor = new storeLocation();
